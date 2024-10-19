@@ -1,0 +1,39 @@
+body{
+    background-color: #794524;
+    color: rgba(227, 224, 192, 1);
+    /*background-attachment: fixed;*/
+}
+#mainNav{
+    /*background-color: transparent;*/
+    /*background-attachment: fixed;*/
+    /*position: fixed;*/
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+}
+#heroNav{
+    height: 753px;
+    background-image: url("./images/HERO PIC.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*opacity: 0.3;*/
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+.links{
+    float: right;
+}
+.grey{
+    color: #E3E0C0;
+}
+.yellow{
+    color: #FBEC6C;
+}
