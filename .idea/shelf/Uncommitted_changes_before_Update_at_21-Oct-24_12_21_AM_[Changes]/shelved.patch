@@ -1,0 +1,233 @@
+Index: assets/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>body{\r\n    background-color: #794524;\r\n    color: rgba(227, 224, 192, 1);\r\n    /*background-attachment: fixed;*/\r\n}\r\n#mainNav{\r\n    /*background-color: transparent;*/\r\n    /*background-attachment: fixed;*/\r\n    /*position: fixed;*/\r\n    /*position: sticky;*/\r\n    /*top: 0;*/\r\n    /*width: 100%;*/\r\n}\r\n#heroNav{\r\n    height: 753px;\r\n    background-image: url(\"./images/HERO PIC.png\");\r\n    width: 100%;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-attachment: fixed;\r\n    /*opacity: 0.3;*/\r\n}\r\nul{\r\n    list-style: none;\r\n}\r\nli{\r\n    display: inline;\r\n    float: left;\r\n    padding: 10px;\r\n}\r\n.links{\r\n    float: right;\r\n}\r\n.grey{\r\n    color: #E3E0C0;\r\n}\r\n.yellow{\r\n    color: #FBEC6C;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/style.css b/assets/style.css
+--- a/assets/style.css	(revision 019d7f9735d65d6d53840e2984bf6d9357f7758d)
++++ b/assets/style.css	(date 1729459136274)
+@@ -11,6 +11,13 @@
+     /*top: 0;*/
+     /*width: 100%;*/
+ }
++.nav-bar{
++    height: 100px;
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++    align-items: center;
++}
+ #heroNav{
+     height: 753px;
+     background-image: url("./images/HERO PIC.png");
+@@ -18,6 +25,9 @@
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
++    display: flex;
++    flex-direction: column;
++    row-gap: 10em;
+     /*opacity: 0.3;*/
+ }
+ ul{
+@@ -30,10 +40,63 @@
+ }
+ .links{
+     float: right;
++    padding-right: 20px;
++    font-size: 1.2em;
++    color: #1a1d20;
++    font-weight: bold;
++    /*align-items: center;*/
+ }
+ .grey{
+     color: #E3E0C0;
+ }
+ .yellow{
+     color: #FBEC6C;
++}
++#second-section{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++    align-items: center;
++}
++.main-texts{
++    display: flex;
++    flex-direction: column;
++    justify-content: space-between;
++}
++.second-third{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++}
++#third-section{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++    align-items: center;
++    /*row-gap: 10px;*/
++}
++#fourth-section{
++    display: flex;
++    flex-direction: column;
++    justify-content: space-between;
++}
++.row{
++    justify-content: space-between;
++}
++#contact-section{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++}
++footer{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++}
++.footer{
++    display: flex;
++    flex-direction: row;
++    justify-content: space-around;
++    /*row-gap: 50px;*/
++    float: right;
+ }
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <link rel=\"stylesheet\" href=\"./assets/css/bootstrap.min.css\">\r\n    <link rel=\"stylesheet\" href=\"./assets/style.css\">\r\n    <link rel=\"shortcut icon\" href=\"./assets/images/logo.svg\" type=\"image/x-icon\">\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\"\r\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>My Language Exchange</title>\r\n</head>\r\n<body>\r\n<div class=\"container-fluid\" id=\"heroNav\">\r\n<!--    start of navbar-->\r\n<!--    <nav class=\"navbar navbar-expand-lg d-sm-flex\" id=\"mainNav\">-->\r\n        <div class=\"container-fluid\">\r\n            <a class=\"navbar-brand\" href=\"#\"><img src=\"./assets/images/logo.svg\" alt=\"logo\" width=\"300\" height=\"100\"></a>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"links\">\r\n            <ul>\r\n            <li><a class=\"nav-link\" href=\"#home\">Home</a></li>\r\n            <li><a class=\"nav-link\" href=\"#\">About Us</a></li>\r\n            <li><a class=\"nav-link\" href=\"#\">Pricing</a></li>\r\n            <li><a class=\"nav-link\" href=\"#\">Contact Us</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n  </div>\r\n<!--</nav>-->\r\n<!--    end of navbar-->\r\n<!--    start of hero section-->\r\n    <div class=\"hero-sect\">\r\n        <h1><span class=\"yellow\">Learn Swahili and </span><span class=\"grey\">Dholuo with </span><br><span class=\"yellow\">My Language </span><span class=\"grey\">Exchange</span></h1>\r\n        <p>Discover the joy of learning Swahili and Dholuo in a fun <br>and structured manner. Our flexible schedules and\r\n            <br>child friendly classes make language learning a breeze.</p>\r\n    </div>\r\n<!--    end of hero section-->\r\n</div>\r\n<!--beginning of second section-->\r\n<div class=\"container-fluid\">\r\n    <div class=\"main-texts\">\r\n        <div class=\"first\">\r\n            <h2>Discover the Flexibility of Our Language Classes</h2>\r\n            <p class=\"yellow\">At My Language Exchange, we offer language classes for both physical <br> and online learners, with flexible schedules to <br>accommodate your preferences</p>\r\n        </div>\r\n        <div class=\"second-third\">\r\n            <div class=\"second\">\r\n                <h3>Physical</h3>\r\n                <p>Join our classes to learn Swahili or Dholuo in a structured, engaging setting.</p>\r\n            </div>\r\n            <div class=\"third\">\r\n                <h3>Online</h3>\r\n                <p>Our virtual classes offer quality instruction and interactive experience.</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"image1\">\r\n        <img src=\"./assets/images/PIC%201.png\" alt=\"first-image\">\r\n    </div>\r\n</div>\r\n<!--end of second section-->\r\n<!--beginning of third section-->\r\n<div class=\"container-fluid\">\r\n    <div class=\"image-div\">\r\n        <img src=\"./assets/images/PIC%202.png\" alt=\"second-image\">\r\n    </div>\r\n    <div class=\"text-div\">\r\n        <h3>Engaging</h3>\r\n        <h2>Fun and Tailored Language Courses for Kids</h2>\r\n        <p>At My Language Exchange, we offer children friendly language courses for kids as young as six years old. Our interactive classes make learning Swahili and Dholuo fun and exciting. </p>\r\n    </div>\r\n</div>\r\n<!--end of third section-->\r\n<!--beginning of fourth section-->\r\n<div class=\"container-fluid\">\r\n    <div class=\"first-main-div\">\r\n        <h2>Unlock the World with Swahili and Dholuo Language Learning</h2>\r\n        <p>Discover the benefits of learning Swahili and Dholuo with My Language Exchange. Immerse yourself in the rich cultures and expand your personal development.</p>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-4\">\r\n            <img src=\"./assets/images/palmtree%201.png\" alt=\"palmtree\">\r\n            <h3>Cultural Immersion</h3>\r\n            <p>Experience the vibrant cultures of East Africa through language, music, and traditions.</p>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <img src=\"./assets/images/PEN.png\" alt=\"pen\">\r\n            <h3>Personal Development</h3>\r\n            <p>Enhance your cognitive skills and broaden your horizons with Swahili and Dholuo.</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--end of fourth section-->\r\n<!--beginning of contact section-->\r\n<div class=\"container-fluid\">\r\n    <div class=\"text-icons\"></div>\r\n    <form action=\"\">\r\n        <input type=\"email\" placeholder=\"Email Address\"><br>\r\n        <input type=\"text\" placeholder=\"Name\"><br>\r\n        <textarea name=\"message\" id=\"message\" cols=\"30\" rows=\"10\" placeholder=\"Write your message here\"></textarea><br>\r\n        <button>SUBMIT</button>\r\n    </form>\r\n</div>\r\n<!--end of contact section-->\r\n<footer>\r\n    <p> &copy;2024 My Language Exchange. All rights reserved.</p>\r\n    <p>Privacy Policy</p>\r\n    <p>Terms of Service</p>\r\n</footer>\r\n<script src=\"./assets/js/bootstrap.bundle.min.js\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 019d7f9735d65d6d53840e2984bf6d9357f7758d)
++++ b/index.html	(date 1729458993249)
+@@ -14,9 +14,10 @@
+ <div class="container-fluid" id="heroNav">
+ <!--    start of navbar-->
+ <!--    <nav class="navbar navbar-expand-lg d-sm-flex" id="mainNav">-->
+-        <div class="container-fluid">
+-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo" width="300" height="100"></a>
+-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
++    <nav class="nav-bar">
++        <div class="logo">
++            <a href="#"><img src="./assets/images/logo.svg" alt="logo" width="300px" height="100%"></a>
++        </div>
+         <div class="links">
+             <ul>
+             <li><a class="nav-link" href="#home">Home</a></li>
+@@ -25,8 +26,7 @@
+             <li><a class="nav-link" href="#">Contact Us</a></li>
+             </ul>
+         </div>
+-    </div>
+-  </div>
++    </nav>
+ <!--</nav>-->
+ <!--    end of navbar-->
+ <!--    start of hero section-->
+@@ -38,20 +38,20 @@
+ <!--    end of hero section-->
+ </div>
+ <!--beginning of second section-->
+-<div class="container-fluid">
++<div class="container-fluid" id="second-section">
+     <div class="main-texts">
+         <div class="first">
+-            <h2>Discover the Flexibility of Our Language Classes</h2>
++            <h2>Discover the Flexibility of <br>Our Language Classes</h2>
+             <p class="yellow">At My Language Exchange, we offer language classes for both physical <br> and online learners, with flexible schedules to <br>accommodate your preferences</p>
+         </div>
+         <div class="second-third">
+             <div class="second">
+                 <h3>Physical</h3>
+-                <p>Join our classes to learn Swahili or Dholuo in a structured, engaging setting.</p>
++                <p>Join our classes to learn <br>Swahili or Dholuo in a <br>structured, engaging setting.</p>
+             </div>
+             <div class="third">
+                 <h3>Online</h3>
+-                <p>Our virtual classes offer quality instruction and interactive experience.</p>
++                <p>Our virtual classes offer quality <br>instruction and interactive <br>experience.</p>
+             </div>
+         </div>
+     </div>
+@@ -61,22 +61,22 @@
+ </div>
+ <!--end of second section-->
+ <!--beginning of third section-->
+-<div class="container-fluid">
++<div class="container-fluid" id="third-section">
+     <div class="image-div">
+         <img src="./assets/images/PIC%202.png" alt="second-image">
+     </div>
+     <div class="text-div">
+         <h3>Engaging</h3>
+-        <h2>Fun and Tailored Language Courses for Kids</h2>
+-        <p>At My Language Exchange, we offer children friendly language courses for kids as young as six years old. Our interactive classes make learning Swahili and Dholuo fun and exciting. </p>
++        <h2>Fun and Tailored Language <br>Courses for Kids</h2>
++        <p>At My Language Exchange, we offer children friendly <br>language courses for kids as young as six years old. Our<br>interactive classes make learning Swahili and Dholuo fun and exciting. </p>
+     </div>
+ </div>
+ <!--end of third section-->
+ <!--beginning of fourth section-->
+-<div class="container-fluid">
++<div class="container-fluid" id="fourth-section">
+     <div class="first-main-div">
+-        <h2>Unlock the World with Swahili and Dholuo Language Learning</h2>
+-        <p>Discover the benefits of learning Swahili and Dholuo with My Language Exchange. Immerse yourself in the rich cultures and expand your personal development.</p>
++        <h2>Unlock the World with Swahili and <br>Dholuo Language Learning</h2>
++        <p>Discover the benefits of learning Swahili and Dholuo with My Language <br>Exchange. Immerse yourself in the rich cultures and expand your personal <br>development.</p>
+     </div>
+     <div class="row">
+         <div class="col-4">
+@@ -93,8 +93,30 @@
+ </div>
+ <!--end of fourth section-->
+ <!--beginning of contact section-->
+-<div class="container-fluid">
+-    <div class="text-icons"></div>
++<div class="container-fluid"id="contact-section">
++    <div class="text-icons">
++        <div>
++            <h2>Contact Us</h2>
++            <p>Get in touch with us for any inquiries or assistance.</p>
++        </div>
++        <div>
++            <a href=""><img src="./assets/images/EMAIL.png" alt="email"></a>
++            <a href="">mylangexchnage@gmail.com</a>
++        </div>
++        <div>
++            <a href=""><img src="./assets/images/CALL.png" alt="email"></a>
++            <a href="">+254 712345678</a>
++        </div>
++        <div class="socials">
++            <p>Social Media</p>
++            <div class="icons">
++                <a href=""><img src="./assets/images/Facebook.png" alt="facebook"></a>
++                <a href=""><img src="./assets/images/Tiktok.png" alt="tiktok"></a>
++                <a href=""><img src="./assets/images/Instagram.png" alt="instagram"></a>
++                <a href=""><img src="./assets/images/Twitter.png" alt="x"></a>
++            </div>
++        </div>
++    </div>
+     <form action="">
+         <input type="email" placeholder="Email Address"><br>
+         <input type="text" placeholder="Name"><br>
+@@ -105,8 +127,10 @@
+ <!--end of contact section-->
+ <footer>
+     <p> &copy;2024 My Language Exchange. All rights reserved.</p>
+-    <p>Privacy Policy</p>
+-    <p>Terms of Service</p>
++    <div class="footer">
++        <p>Privacy Policy</p>
++        <p>Terms of Service</p>
++    </div>
+ </footer>
+ <script src="./assets/js/bootstrap.bundle.min.js"></script>
+ </body>
