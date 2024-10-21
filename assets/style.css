@@ -14,6 +14,7 @@ h2{
 }
 .hero-para{
     font-size: 1.8em;
+    padding-top: 0.7em;
 }
 p{
     font-family: "Jacques Francois", serif;
@@ -66,4 +67,108 @@ li{
 }
 .yellow{
     color: #FBEC6C;
+}
+.image-k{
+    object-fit: cover;
+}
+#second-section{
+    padding-top: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.main-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-third{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /*padding-top: 1em;*/
+}
+.third{
+    padding-left: 10em;
+}
+#third-section{
+    padding-top: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*row-gap: 100em;*/
+}
+#fourth-section{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-between;
+    padding-top: 1.2em;
+}
+.four-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact-section{
+    padding-top: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text-icons{
+    width: 100%;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*column-gap: 50px;*/
+}
+.text{
+    /*padding-bottom: 30px;*/
+    height: 50px;
+    border-radius: 8px;
+    background-color: #FBEC6C;
+    color: black;
+    padding-left: 30px;
+    border: #FBEC6C;
+}
+.one{
+    width: fit-content%;
+    padding-top: 20px;
+}
+.text-area{
+    border-radius: 8px;
+    background-color: #FBEC6C;
+    padding-left: 30px;
+    border: #FBEC6C;
+}
+button{
+    padding-top: 20px;
+    border-radius: 30%;
+    width: 30%;
+    align-items: center;
+    border: #4d3425;
+    background-color: #492c1b;
+}
+footer{
+    padding-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.last-two{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    /*float: right;*/
+    /*padding-right: 1em;*/
+}
+.privacy{
+    padding-right: 40px;
 }
